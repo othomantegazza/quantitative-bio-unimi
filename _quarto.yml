@@ -1,0 +1,20 @@
+project:
+  type: website
+
+website:
+  title: "Quantitative Bio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - resources.qmd
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+
+
