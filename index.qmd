@@ -10,9 +10,29 @@ format:
 
 # Foundation
 
+During your master you will approach biology from a quantitative point of view.
+
+Some aspects of biological sciences has been quantitative since their start. Genetics for example is been quantitative since the beginning, when [Gregor Mendel](https://en.wikipedia.org/wiki/Mendelian_inheritance); discovered the fundamental laws of inheritance combining experimental work with statistiscal testing.
+
+So chances are that you are not completely new to the quantitative approach. For those who start from zero instead, don't worry, it's fun.
+
 ## Two Changes in Mindset
 
+Switching to a quantitative mindset requires you to take two steps at the same time. One step is learning to deal with **numbers and data**, the other is learning **computer programming** in order to use computational tools such as Python, R or Julia. While in theory one can take the first step without the second one, at the present day it is much more practical to learn about data and programming at the same time.
+
 ## Open Source, open Access
+
+Most of computational tools for quantitative disciplines have been developed with an [open source apporach](https://bookdown.org/rdpeng/rprogdatascience/history-and-overview-of-r.html#free-software).
+
+This means that the software that you'll use is free, and that you are free to:
+
+- Run the programs.
+- Study how the programs work.
+- Redistribute copies of the program.
+- Modify and improve the program and release it again to the public.
+
+Let's see what it means with Scikit leanr and Bookdown.
+
 
 ## Your languages
 
