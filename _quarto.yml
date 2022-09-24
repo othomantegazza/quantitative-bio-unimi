@@ -12,7 +12,8 @@ website:
         text: Home
       - href: my-background.qmd
         text: CV
-      - contacts.qmd
+      - href: contacts.qmd
+        text: Contacts
 
 format:
   html:
