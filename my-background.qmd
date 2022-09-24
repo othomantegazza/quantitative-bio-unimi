@@ -1,0 +1,42 @@
+---
+title: "My Background"
+author: "Otho Mantegazza"
+---
+
+### Data Scientist - [Accurat](https://accurat.it/)
+
+Nov. 2019 - Present
+
+- Data Science / analytics counselling to projects.
+- Privacy and GDPR compliance.
+- Development of Data Tools for accounting and project management.
+- Teaching: recording of data science Video Lessons for online classes.- Data Science / analytics counselling to projects. - Privacy and GDPR compliance. - Development of Data Tools for accounting and project management. - Teaching: recording of data science Video Lessons for online classes.
+
+### Data Science Educator - [Accurat Dataschool](https://dataschool.accurat.it/)
+
+Jun 2021 - Present
+
+### Postdoctoral Researcher - [IRD](https://www.ird.fr/occitanie)
+
+Jan 2018 - Dec 2018
+
+- Development of an Analytic pipeline to compare transcriptomes of different rice strains and species.
+- Development of an R package for graph-based comparison of rice panicle topology
+- Development of an Analytic pipeline to compare transcriptomes of different rice strains and species. - Development of an R package for graph-based comparison of rice panicle topology 
+
+### Postdoctoral Researcher - [CEPLAS](https://www.ceplas.eu/en/home/)
+
+Apr 2015 - Nov 2017
+
+- Development of analytic and modeling pipelines for comparing transcriptomes of different plant species.
+- Analysis of proteomic data.
+- Development of gene editing experiments for engineering of photosynthetic pathways.
+- Development of analytic and modeling pipelines for comparing transcriptomes of different plant species. - Analysis of proteomic data. - Development of gene editing experiments for engineering of photosynthetic pathways. 
+
+### PHD Candidate - [UNIMI](http://users.unimi.it/madsgroup/index.php)
+
+Nov 2011 - Nov 2014
+
+- Analysis and modeling of transcriptomic data,
+- Development of protocols for Laser microdissection of plant tissues.
+- Development of gene editing protocols.

@@ -1,5 +1,8 @@
 project:
   type: website
+  output-dir: docs
+  preview:
+    port: 4200
 
 website:
   title: "Quantitative Bio"
@@ -7,8 +10,9 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - resources.qmd
+      - href: my-background.qmd
+        text: CV
+      - contacts.qmd
 
 format:
   html:

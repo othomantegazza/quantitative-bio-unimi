@@ -1,4 +1,11 @@
 ---
-title: "mysite"
+title: "Science With Data"
+subtitle: "An introduction to programming for the master in [Quantitative Biology](https://www.unimi.it/en/education/quantitative-biology)"
+author: "Otho Mantegazza"
+format: 
+  html:
+    toc: true
 ---
+
+# Data
 
