@@ -12,31 +12,70 @@ format:
 
 During your master you will approach biology from a quantitative point of view.
 
-Some aspects of biological sciences has been quantitative since their start. Genetics for example is been quantitative since the beginning, when [Gregor Mendel](https://en.wikipedia.org/wiki/Mendelian_inheritance); discovered the fundamental laws of inheritance combining experimental work with statistiscal testing.
+Some aspects of biological sciences has been quantitative since their start. Genetics for example is been quantitative since the beginning; when [Gregor Mendel](https://en.wikipedia.org/wiki/Mendelian_inheritance) discovered the fundamental laws of inheritance, combining experimental work with statistiscal testing.
 
-So chances are that you are not completely new to the quantitative approach. For those who start from zero instead, don't worry, it's fun.
+So, chances are that you are not completely new to the quantitative approach. For those who start from zero instead, don't worry, it's fun.
 
-## Two Changes in Mindset
+# Two Changes in Mindset
 
-Switching to a quantitative mindset requires you to take two steps at the same time. One step is learning to deal with **numbers and data**, the other is learning **computer programming** in order to use computational tools such as Python, R or Julia. While in theory one can take the first step without the second one, at the present day it is much more practical to learn about data and programming at the same time.
+Switching to a quantitative mindset requires you to take two steps at the same time. One step is learning to deal with **numbers and data**, the other is learning **computer programming** in order to automate your work on data with programming languages such as [Python](https://www.python.org/) or [R](https://www.r-project.org/) (or Julia, or Javascript). While in theory, one can take the first step without the second one; at the present day it is much more practical to learn about data and programming at the same time.
 
-## Open Source, open Access
+When you work on data, there are so many steps that you can automate using computer programming, that without it, you would hardly achieve anything useful within reasonable time.
 
-Most of computational tools for quantitative disciplines have been developed with an [open source apporach](https://bookdown.org/rdpeng/rprogdatascience/history-and-overview-of-r.html#free-software).
+# Open Source, open Access
 
-This means that the software that you'll use is free, and that you are free to:
+Most of computational tools for quantitative disciplines, such as R and Python, have been developed with an [open source apporach](https://en.wikipedia.org/wiki/Open_source).
+
+This means that the software that you'll use is free, and that [you are free to](https://bookdown.org/rdpeng/rprogdatascience/history-and-overview-of-r.html#free-software):
 
 - Run the programs.
 - Study how the programs work.
 - Redistribute copies of the program.
 - Modify and improve the program and release it again to the public.
 
-Let's see what it means with Scikit leanr and Bookdown.
+For example, you can access, copy, and propose modification to:
+
+- The [source code of scikit-learn](https://github.com/scikit-learn/scikit-learn), the [main python package for machine learning](https://scikit-learn.org/stable/).
+- The [source code for dplyr](https://github.com/tidyverse/dplyr/), the main [R package for manipulating data](https://dplyr.tidyverse.org/).
+
+# Install R and Python
+
+In this master you will focus on learning the programming language Python. Although if later you are going to work in a quantitative and data intensive environment, chances are that you are going to use also R. 
+
+The ["R or Python"](https://www.ibm.com/cloud/blog/python-vs-r) dilemma is a long standing one in data science, those two programming languages are mostly interchangeable, and are both used heavily in data intensive environments.
+
+The best choice is to learn and become proficient in one at least one of the two. When you know one, the other comes easy; like learning spanish when you already speak italian.
+
+## R
+
+The easiest way to install R, is to do it locally.
+
+1. Download and install R from [CRAN](https://cran.r-project.org/).
+2. Downlad and install the [Rstudio IDE](https://www.rstudio.com/).
+
+## Python
+
+Python can also be [installed locally](https://jakevdp.github.io/WhirlwindTourOfPython/00-introduction.html#Installation-and-Practical-Considerations).
+
+But I personally prefer to run it in an isolated Docker container, so that I can try multiple version without dealing with conflicts.
+
+### Run python remotely on Google Colab
+
+The easiest way to try python, is to run it remotely on Google's server, through [Google Colab](https://colab.research.google.com/).
+
+Just open a Colab Notebook, and run some code.
+
+### Locally
+
+You can install python locally downloading it from [it's main website](https://www.python.org/).
+
+If you use **Linux** or **MacOs**, python is already installed on your computer. Open a terminal and type `python` or `python3` to open it.
+
+### In a Docker Container
 
 
-## Your languages
 
-## Text Files, Scripts, Data
+# Text Files, Scripts, Data
 
 ## Communication, Availability, Reproducibility
 
