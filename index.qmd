@@ -114,8 +114,21 @@ Most programming language have been built with an open source mindset. Making th
 
 ## Documentation
 
-R, Python, and their best packages, come with extensive documentation.
+R, Python, and their best packages, come with extensive documentation. For example, check the Python Package [Scikit-Learn](https://scikit-learn.org/stable/); it has a website which details how to use the functions in this package, with a [discoursive user guide](https://scikit-learn.org/stable/user_guide.html), [technical documentation](https://scikit-learn.org/stable/modules/classes.html) and [extensive examples](https://scikit-learn.org/stable/auto_examples/index.html).
 
+Also the R framework [Tidymodels](https://www.tidymodels.org/), which cover the same scope as scikit-learn, has extensive documentation.
 
+## Online communities
 
+[Stackoverflow](https://stackoverflow.com/) has millions of questions with high quality answers, that developers all around the world use and curate every day. 
+
+Generally, while programming, google is your friend.
+
+## Books
+
+To approach a new topic, you don't need only to get question anwsered, but also to discover which question could be asked. 
+
+Books are great for that. 
+
+In the [resources](books.html) section of this website you can find a collection of open access books that you can consult online freely. Enjoy!
 
