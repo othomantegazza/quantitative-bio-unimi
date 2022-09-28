@@ -98,8 +98,18 @@ Break the ice and write some code.
 
 In the first example we run code from a script into the R console, in the second example we run code from a [notebook](https://en.wikipedia.org/wiki/Notebook_interface).
 
+# Flexibility
 
-# Text Files, Scripts, Data
+When you take your first steps into programming and into open source, you'll find out that there's  a lot of flexibility on how to achieve something, and there no absolute best way to carry on a task. For example, you can evaluate R code in Rstudio, you can evaluate it in your computer terminal, or you can evaluate it in the Visual Studio Code IDE. 
+
+Scripts are simply text files, and nothing stops you from turning an R script into a Python script simply its extension from `.R` to `.py` by mistake. But of course afterwards the syntax of the code would be wrong.
+
+Tabular data often come in [CSV format](https://en.wikipedia.org/wiki/Comma-separated_values), which are also basically text files, with only loose rules defining what's a value, what's a cell, what's row and what's a column. You can open them in any text editor, or you can [parse them](https://en.wikipedia.org/wiki/Parsing) and [load them into an R](https://readr.tidyverse.org/) or [Python object](https://pandas.pydata.org/docs/getting_started/intro_tutorials/02_read_write.html), to use them abd manipulate them, as long as you get the encoding rules right.
+
+This flexibility could be disorienting at first. Don't worry, you'll get used to it.
+
+# Learn More
+
 
 
 
