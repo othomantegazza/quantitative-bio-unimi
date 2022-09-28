@@ -59,6 +59,8 @@ Python can also be [installed locally](https://jakevdp.github.io/WhirlwindTourOf
 
 But I personally prefer to run it in an isolated Docker container, so that I can try multiple version without dealing with conflicts.
 
+So, to run python you have many options:
+
 ### Run python remotely on Google Colab
 
 The easiest way to try python, is to run it remotely on Google's server, through [Google Colab](https://colab.research.google.com/).
@@ -73,7 +75,18 @@ If you use **Linux** or **MacOs**, python is already installed on your computer.
 
 ### In a Docker Container
 
+I personally use this option. It requires you to install both the IDE [Visual Studio Code](https://code.visualstudio.com/) and the virtualization platform [Docker](https://www.docker.com/).
 
+In this way you will run python in a container isolated from your main operating system through Docker and you will connect to it using visual studio code.
+
+This setup is done through a [Dev Container](https://code.visualstudio.com/docs/remote/containers) It's easier than it sounds, find [an example in this page with video](https://code.visualstudio.com/learn/develop-cloud/containers). 
+
+To try this setup:
+
+1. Install [Docker](https://www.docker.com/).
+2. Install [Visual Studio Code](https://code.visualstudio.com/).
+3. Install the [Remote Container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension to Visual Studio Code.
+4. Download this [Github Repo](https://github.com/othomantegazza/python-sci-simple-devcon) and open it with Visual Studio Code.
 
 # Text Files, Scripts, Data
 
