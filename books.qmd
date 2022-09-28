@@ -1,0 +1,20 @@
+# Books
+
+All these books about Python and R can be accessed for free. They are open access and open source.
+
+## Python
+
+- [The Python Data Science Handbook](https://jakevdp.github.io/WhirlwindTourOfPython/).
+- [A Whirlwind Introduction to Python](https://jakevdp.github.io/WhirlwindTourOfPython/).    
+
+## R
+
+- [R for Data Science](https://r4ds.had.co.nz/): An introduction to data analysis with R/Tidyverse.
+  - ([2nd edition](https://r4ds.hadley.nz/)  coming out soon). 
+- [Introduction to Data Science](https://rafalab.github.io/dsbook/) - A detailed introduction to Data science by a biostatistician.
+- [Advanced R](https://adv-r.hadley.nz//) - All you wish to know about programming in R.
+- [Introduction to Statistical Learning](https://www.statlearning.com)  - A detailed introductio  to modern statistical methods, implemented in R.
+- [Text Mining in R](https://www.tidytextmining.com/index.html) Analyzing natural language and written text in R.
+- [Tidy Modeling with R](https://www.tmwr.org/) R's machine learning framework.
+- [Designing and Building Data Science Solutions](https://datasciencedesign.com/) how to set up a data science project.
+

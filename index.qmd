@@ -110,6 +110,12 @@ This flexibility could be disorienting at first. Don't worry, you'll get used to
 
 # Learn More
 
+Most programming language have been built with an open source mindset. Making these tools available to everyone has been a priority, but even the best tool is useless, if people don't know what to do with it.
+
+## Documentation
+
+R, Python, and their best packages, come with extensive documentation.
+
 
 
 

@@ -5,11 +5,13 @@ project:
     port: 4200
 
 website:
-  title: "Quantitative Bio"
+  title: "Programming for QB"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - href: books.qmd
+        text: Resources
       - href: my-background.qmd
         text: CV
       - href: contacts.qmd
