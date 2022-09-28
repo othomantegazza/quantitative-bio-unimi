@@ -8,7 +8,7 @@ format:
     number-sections: true
 ---
 
-# Foundation
+# Welcome
 
 During your master you will approach biology from a quantitative point of view.
 
@@ -88,13 +88,18 @@ To try this setup:
 3. Install the [Remote Container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension to Visual Studio Code.
 4. Download this [Github Repo](https://github.com/othomantegazza/python-sci-simple-devcon) and open it with Visual Studio Code.
 
+# Let's start programming
+
+Break the ice and write some code.
+
+1. Open a [script in Rstudio](https://r4ds.had.co.nz/introduction.html#rstudio) and copy [this code in it](https://gist.github.com/othomantegazza/03d50b0a9a60d42ef73ef7019f84c958). Run it in the R console to get some nice data visualization out of it.
+
+2. Some python code is already in the [Github repository](https://github.com/othomantegazza/python-sci-simple-devcon) that you have downloaded previously. Open it in Visual Studio Code and find the [hello.ipynb](https://github.com/othomantegazza/python-sci-simple-devcon/blob/main/hello.ipynb) file, run the code that's stored in it.
+
+In the first example we run code from a script into the R console, in the second example we run code from a [notebook](https://en.wikipedia.org/wiki/Notebook_interface).
+
+
 # Text Files, Scripts, Data
 
-## Communication, Availability, Reproducibility
 
-# Some Practice
-
-# Resources
-
-# 
 
