@@ -2,6 +2,8 @@
 
 All these books about Python and R can be accessed for free. They are open access and open source.
 
+This is collection of works that I consult almost daily while working.
+
 ## Python
 
 - [The Python Data Science Handbook](https://jakevdp.github.io/WhirlwindTourOfPython/).
