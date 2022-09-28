@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "books.html",
+    "href": "books.html",
+    "title": "Programming for QB",
+    "section": "",
+    "text": "All these books about Python and R can be accessed for free. They are open access and open source.\nThis is collection of works that I consult almost daily while working.\n\n\n\nThe Python Data Science Handbook.\nA Whirlwind Introduction to Python.\n\n\n\n\n\nR for Data Science: An introduction to data analysis with R/Tidyverse.\n\n(2nd edition coming out soon).\n\nIntroduction to Data Science - A detailed introduction to Data science by a biostatistician.\nAdvanced R - All you wish to know about programming in R.\nIntroduction to Statistical Learning - A detailed introductio to modern statistical methods, implemented in R.\nText Mining in R Analyzing natural language and written text in R.\nTidy Modeling with R R’s machine learning framework.\nDesigning and Building Data Science Solutions how to set up a data science project."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Science With Data",
+    "section": "",
+    "text": "During your master you will approach biology from a quantitative point of view.\nSome aspects of biological sciences has been quantitative since their start. Genetics for example is been quantitative since the beginning; when Gregor Mendel discovered the fundamental laws of inheritance, combining experimental work with statistiscal testing.\nSo, chances are that you are not completely new to the quantitative approach. For those who start from zero instead, don’t worry, it’s fun."
+  },
+  {
+    "objectID": "index.html#r",
+    "href": "index.html#r",
+    "title": "Science With Data",
+    "section": "4.1 R",
+    "text": "4.1 R\nThe easiest way to install R, is to do it locally.\n\nDownload and install R from CRAN.\nDownlad and install the Rstudio IDE."
+  },
+  {
+    "objectID": "index.html#python",
+    "href": "index.html#python",
+    "title": "Science With Data",
+    "section": "4.2 Python",
+    "text": "4.2 Python\nPython can also be installed locally.\nBut I personally prefer to run it in an isolated Docker container, so that I can try multiple version without dealing with conflicts.\nSo, to run python you have many options:\n\n4.2.1 Run python remotely on Google Colab\nThe easiest way to try python, is to run it remotely on Google’s server, through Google Colab.\nJust open a Colab Notebook, and run some code.\n\n\n4.2.2 Locally\nYou can install python locally downloading it from it’s main website.\nIf you use Linux or MacOs, python is already installed on your computer. Open a terminal and type python or python3 to open it.\n\n\n4.2.3 In a Docker Container\nI personally use this option. It requires you to install both the IDE Visual Studio Code and the virtualization platform Docker.\nIn this way you will run python in a container isolated from your main operating system through Docker and you will connect to it using visual studio code.\nThis setup is done through a Dev Container It’s easier than it sounds, find an example in this page with video.\nTo try this setup:\n\nInstall Docker.\nInstall Visual Studio Code.\nInstall the Remote Container extension to Visual Studio Code.\nDownload this Github Repo and open it with Visual Studio Code."
+  },
+  {
+    "objectID": "index.html#documentation",
+    "href": "index.html#documentation",
+    "title": "Science With Data",
+    "section": "7.1 Documentation",
+    "text": "7.1 Documentation\nR, Python, and their best packages, come with extensive documentation. For example, check the Python Package Scikit-Learn; it has a website which details how to use the functions in this package, with a discoursive user guide, technical documentation and extensive examples.\nAlso the R framework Tidymodels, which cover the same scope as scikit-learn, has extensive documentation."
+  },
+  {
+    "objectID": "index.html#online-communities",
+    "href": "index.html#online-communities",
+    "title": "Science With Data",
+    "section": "7.2 Online communities",
+    "text": "7.2 Online communities\nStackoverflow has millions of questions with high quality answers, that developers all around the world use and curate every day.\nGenerally, while programming, google is your friend."
+  },
+  {
+    "objectID": "index.html#books",
+    "href": "index.html#books",
+    "title": "Science With Data",
+    "section": "7.3 Books",
+    "text": "7.3 Books\nTo approach a new topic, you don’t need only to get question anwsered, but also to discover which question could be asked.\nBooks are great for that.\nIn the resources section of this website you can find a collection of open access books that you can consult online freely. Enjoy!"
+  },
+  {
+    "objectID": "my-background.html",
+    "href": "my-background.html",
+    "title": "My Background",
+    "section": "",
+    "text": "Data Science Educator - Accurat Dataschool\nJun 2021 - Present\n\n\nPostdoctoral Researcher - IRD\nJan 2018 - Dec 2018\n\nDevelopment of an Analytic pipeline to compare transcriptomes of different rice strains and species.\nDevelopment of an R package for graph-based comparison of rice panicle topology\nDevelopment of an Analytic pipeline to compare transcriptomes of different rice strains and species. - Development of an R package for graph-based comparison of rice panicle topology\n\n\n\nPostdoctoral Researcher - CEPLAS\nApr 2015 - Nov 2017\n\nDevelopment of analytic and modeling pipelines for comparing transcriptomes of different plant species.\nAnalysis of proteomic data.\nDevelopment of gene editing experiments for engineering of photosynthetic pathways.\nDevelopment of analytic and modeling pipelines for comparing transcriptomes of different plant species. - Analysis of proteomic data. - Development of gene editing experiments for engineering of photosynthetic pathways.\n\n\n\nPHD Candidate - UNIMI\nNov 2011 - Nov 2014\n\nAnalysis and modeling of transcriptomic data,\nDevelopment of protocols for Laser microdissection of plant tissues.\nDevelopment of gene editing protocols."
+  }
+]

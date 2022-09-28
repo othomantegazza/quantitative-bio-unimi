@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Otho Mantegazza">
+
+<title>Programming for QB - Science With Data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Programming for QB</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./books.html">Resources</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./my-background.html">CV</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contacts.html">Contacts</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome"> <span class="header-section-number">1</span> Welcome</a></li>
+  <li><a href="#two-changes-in-mindset" id="toc-two-changes-in-mindset" class="nav-link" data-scroll-target="#two-changes-in-mindset"> <span class="header-section-number">2</span> Two Changes in Mindset</a></li>
+  <li><a href="#open-source-open-access" id="toc-open-source-open-access" class="nav-link" data-scroll-target="#open-source-open-access"> <span class="header-section-number">3</span> Open Source, open Access</a></li>
+  <li><a href="#install-r-and-python" id="toc-install-r-and-python" class="nav-link" data-scroll-target="#install-r-and-python"> <span class="header-section-number">4</span> Install R and Python</a>
+  <ul class="collapse">
+  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r"> <span class="header-section-number">4.1</span> R</a></li>
+  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python"> <span class="header-section-number">4.2</span> Python</a>
+  <ul class="collapse">
+  <li><a href="#run-python-remotely-on-google-colab" id="toc-run-python-remotely-on-google-colab" class="nav-link" data-scroll-target="#run-python-remotely-on-google-colab"> <span class="header-section-number">4.2.1</span> Run python remotely on Google Colab</a></li>
+  <li><a href="#locally" id="toc-locally" class="nav-link" data-scroll-target="#locally"> <span class="header-section-number">4.2.2</span> Locally</a></li>
+  <li><a href="#in-a-docker-container" id="toc-in-a-docker-container" class="nav-link" data-scroll-target="#in-a-docker-container"> <span class="header-section-number">4.2.3</span> In a Docker Container</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#lets-start-programming" id="toc-lets-start-programming" class="nav-link" data-scroll-target="#lets-start-programming"> <span class="header-section-number">5</span> Let’s start programming</a></li>
+  <li><a href="#flexibility" id="toc-flexibility" class="nav-link" data-scroll-target="#flexibility"> <span class="header-section-number">6</span> Flexibility</a></li>
+  <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more"> <span class="header-section-number">7</span> Learn More</a>
+  <ul class="collapse">
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation"> <span class="header-section-number">7.1</span> Documentation</a></li>
+  <li><a href="#online-communities" id="toc-online-communities" class="nav-link" data-scroll-target="#online-communities"> <span class="header-section-number">7.2</span> Online communities</a></li>
+  <li><a href="#books" id="toc-books" class="nav-link" data-scroll-target="#books"> <span class="header-section-number">7.3</span> Books</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Science With Data</h1>
+<p class="subtitle lead">Intro to programming for <a href="https://www.unimi.it/en/education/quantitative-biology">Quantitative Biology</a>.</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Otho Mantegazza </p>
+          </div>
+  </div>
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="welcome" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Welcome</h1>
+<p>During your master you will approach biology from a quantitative point of view.</p>
+<p>Some aspects of biological sciences has been quantitative since their start. Genetics for example is been quantitative since the beginning; when <a href="https://en.wikipedia.org/wiki/Mendelian_inheritance">Gregor Mendel</a> discovered the fundamental laws of inheritance, combining experimental work with statistiscal testing.</p>
+<p>So, chances are that you are not completely new to the quantitative approach. For those who start from zero instead, don’t worry, it’s fun.</p>
+</section>
+<section id="two-changes-in-mindset" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Two Changes in Mindset</h1>
+<p>Switching to a quantitative mindset requires you to take two steps at the same time. One step is learning to deal with <strong>numbers and data</strong>, the other is learning <strong>computer programming</strong> in order to automate your work on data with programming languages such as <a href="https://www.python.org/">Python</a> or <a href="https://www.r-project.org/">R</a> (or Julia, or Javascript). While in theory, one can take the first step without the second one; at the present day it is much more practical to learn about data and programming at the same time.</p>
+<p>When you work on data, there are so many steps that you can automate using computer programming, that without it, you would hardly achieve anything useful within reasonable time.</p>
+</section>
+<section id="open-source-open-access" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Open Source, open Access</h1>
+<p>Most of computational tools for quantitative disciplines, such as R and Python, have been developed with an <a href="https://en.wikipedia.org/wiki/Open_source">open source apporach</a>.</p>
+<p>This means that the software that you’ll use is free, and that <a href="https://bookdown.org/rdpeng/rprogdatascience/history-and-overview-of-r.html#free-software">you are free to</a>:</p>
+<ul>
+<li>Run the programs.</li>
+<li>Study how the programs work.</li>
+<li>Redistribute copies of the program.</li>
+<li>Modify and improve the program and release it again to the public.</li>
+</ul>
+<p>For example, you can access, copy, and propose modification to:</p>
+<ul>
+<li>The <a href="https://github.com/scikit-learn/scikit-learn">source code of scikit-learn</a>, the <a href="https://scikit-learn.org/stable/">main python package for machine learning</a>.</li>
+<li>The <a href="https://github.com/tidyverse/dplyr/">source code for dplyr</a>, the main <a href="https://dplyr.tidyverse.org/">R package for manipulating data</a>.</li>
+</ul>
+</section>
+<section id="install-r-and-python" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Install R and Python</h1>
+<p>In this master you will focus on learning the programming language Python. Although if later you are going to work in a quantitative and data intensive environment, chances are that you are going to use also R.</p>
+<p>The <a href="https://www.ibm.com/cloud/blog/python-vs-r">“R or Python”</a> dilemma is a long standing one in data science, those two programming languages are mostly interchangeable, and are both used heavily in data intensive environments.</p>
+<p>The best choice is to learn and become proficient in one at least one of the two. When you know one, the other comes easy; like learning spanish when you already speak italian.</p>
+<section id="r" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="r"><span class="header-section-number">4.1</span> R</h2>
+<p>The easiest way to install R, is to do it locally.</p>
+<ol type="1">
+<li>Download and install R from <a href="https://cran.r-project.org/">CRAN</a>.</li>
+<li>Downlad and install the <a href="https://www.rstudio.com/">Rstudio IDE</a>.</li>
+</ol>
+</section>
+<section id="python" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="python"><span class="header-section-number">4.2</span> Python</h2>
+<p>Python can also be <a href="https://jakevdp.github.io/WhirlwindTourOfPython/00-introduction.html#Installation-and-Practical-Considerations">installed locally</a>.</p>
+<p>But I personally prefer to run it in an isolated Docker container, so that I can try multiple version without dealing with conflicts.</p>
+<p>So, to run python you have many options:</p>
+<section id="run-python-remotely-on-google-colab" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="run-python-remotely-on-google-colab"><span class="header-section-number">4.2.1</span> Run python remotely on Google Colab</h3>
+<p>The easiest way to try python, is to run it remotely on Google’s server, through <a href="https://colab.research.google.com/">Google Colab</a>.</p>
+<p>Just open a Colab Notebook, and run some code.</p>
+</section>
+<section id="locally" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="locally"><span class="header-section-number">4.2.2</span> Locally</h3>
+<p>You can install python locally downloading it from <a href="https://www.python.org/">it’s main website</a>.</p>
+<p>If you use <strong>Linux</strong> or <strong>MacOs</strong>, python is already installed on your computer. Open a terminal and type <code>python</code> or <code>python3</code> to open it.</p>
+</section>
+<section id="in-a-docker-container" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="in-a-docker-container"><span class="header-section-number">4.2.3</span> In a Docker Container</h3>
+<p>I personally use this option. It requires you to install both the IDE <a href="https://code.visualstudio.com/">Visual Studio Code</a> and the virtualization platform <a href="https://www.docker.com/">Docker</a>.</p>
+<p>In this way you will run python in a container isolated from your main operating system through Docker and you will connect to it using visual studio code.</p>
+<p>This setup is done through a <a href="https://code.visualstudio.com/docs/remote/containers">Dev Container</a> It’s easier than it sounds, find <a href="https://code.visualstudio.com/learn/develop-cloud/containers">an example in this page with video</a>.</p>
+<p>To try this setup:</p>
+<ol type="1">
+<li>Install <a href="https://www.docker.com/">Docker</a>.</li>
+<li>Install <a href="https://code.visualstudio.com/">Visual Studio Code</a>.</li>
+<li>Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers">Remote Container</a> extension to Visual Studio Code.</li>
+<li>Download this <a href="https://github.com/othomantegazza/python-sci-simple-devcon">Github Repo</a> and open it with Visual Studio Code.</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="lets-start-programming" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Let’s start programming</h1>
+<p>Break the ice and write some code.</p>
+<ol type="1">
+<li><p>Open a <a href="https://r4ds.had.co.nz/introduction.html#rstudio">script in Rstudio</a> and copy <a href="https://gist.github.com/othomantegazza/03d50b0a9a60d42ef73ef7019f84c958">this code in it</a>. Run it in the R console to get some nice data visualization out of it.</p></li>
+<li><p>Some python code is already in the <a href="https://github.com/othomantegazza/python-sci-simple-devcon">Github repository</a> that you have downloaded previously. Open it in Visual Studio Code and find the <a href="https://github.com/othomantegazza/python-sci-simple-devcon/blob/main/hello.ipynb">hello.ipynb</a> file, run the code that’s stored in it.</p></li>
+</ol>
+<p>In the first example we run code from a script into the R console, in the second example we run code from a <a href="https://en.wikipedia.org/wiki/Notebook_interface">notebook</a>.</p>
+</section>
+<section id="flexibility" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Flexibility</h1>
+<p>When you take your first steps into programming and into open source, you’ll find out that there’s a lot of flexibility on how to achieve something, and there no absolute best way to carry on a task. For example, you can evaluate R code in Rstudio, you can evaluate it in your computer terminal, or you can evaluate it in the Visual Studio Code IDE.</p>
+<p>Scripts are simply text files, and nothing stops you from turning an R script into a Python script simply its extension from <code>.R</code> to <code>.py</code> by mistake. But of course afterwards the syntax of the code would be wrong.</p>
+<p>Tabular data often come in <a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV format</a>, which are also basically text files, with only loose rules defining what’s a value, what’s a cell, what’s row and what’s a column. You can open them in any text editor, or you can <a href="https://en.wikipedia.org/wiki/Parsing">parse them</a> and <a href="https://readr.tidyverse.org/">load them into an R</a> or <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/02_read_write.html">Python object</a>, to use them abd manipulate them, as long as you get the encoding rules right.</p>
+<p>This flexibility could be disorienting at first. Don’t worry, you’ll get used to it.</p>
+</section>
+<section id="learn-more" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Learn More</h1>
+<p>Most programming language have been built with an open source mindset. Making these tools available to everyone has been a priority, but even the best tool is useless, if people don’t know what to do with it.</p>
+<section id="documentation" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="documentation"><span class="header-section-number">7.1</span> Documentation</h2>
+<p>R, Python, and their best packages, come with extensive documentation. For example, check the Python Package <a href="https://scikit-learn.org/stable/">Scikit-Learn</a>; it has a website which details how to use the functions in this package, with a <a href="https://scikit-learn.org/stable/user_guide.html">discoursive user guide</a>, <a href="https://scikit-learn.org/stable/modules/classes.html">technical documentation</a> and <a href="https://scikit-learn.org/stable/auto_examples/index.html">extensive examples</a>.</p>
+<p>Also the R framework <a href="https://www.tidymodels.org/">Tidymodels</a>, which cover the same scope as scikit-learn, has extensive documentation.</p>
+</section>
+<section id="online-communities" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="online-communities"><span class="header-section-number">7.2</span> Online communities</h2>
+<p><a href="https://stackoverflow.com/">Stackoverflow</a> has millions of questions with high quality answers, that developers all around the world use and curate every day.</p>
+<p>Generally, while programming, google is your friend.</p>
+</section>
+<section id="books" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="books"><span class="header-section-number">7.3</span> Books</h2>
+<p>To approach a new topic, you don’t need only to get question anwsered, but also to discover which question could be asked.</p>
+<p>Books are great for that.</p>
+<p>In the <a href="books.html">resources</a> section of this website you can find a collection of open access books that you can consult online freely. Enjoy!</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
