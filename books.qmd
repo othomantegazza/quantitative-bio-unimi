@@ -7,7 +7,8 @@ This is collection of works that I consult almost daily while working.
 ## Python
 
 - [https://jakevdp.github.io/PythonDataScienceHandbook/](https://jakevdp.github.io/WhirlwindTourOfPython/).
-- [A Whirlwind Introduction to Python](https://jakevdp.github.io/WhirlwindTourOfPython/).    
+- [A Whirlwind Introduction to Python](https://jakevdp.github.io/WhirlwindTourOfPython/).
+- [Artificial Intelligence in Python](https://github.com/fastai/fastbook)
 
 ## R
 
