@@ -6,7 +6,7 @@ This is collection of works that I consult almost daily while working.
 
 ## Python
 
-- [The Python Data Science Handbook](https://jakevdp.github.io/WhirlwindTourOfPython/).
+- [https://jakevdp.github.io/PythonDataScienceHandbook/](https://jakevdp.github.io/WhirlwindTourOfPython/).
 - [A Whirlwind Introduction to Python](https://jakevdp.github.io/WhirlwindTourOfPython/).    
 
 ## R
